@@ -1,0 +1,24 @@
+{
+  "originHash" : "645c88f1bb3021ba3ffbd3a48ae5487e3569e96e53ecb465444ae6d7d130642b",
+  "pins" : [
+    {
+      "identity" : "debouncedonchange",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Tunous/DebouncedOnChange.git",
+      "state" : {
+        "revision" : "2583a30a8d277c3475c1b3a10b0f902a7be34f3b",
+        "version" : "2.1.0"
+      }
+    },
+    {
+      "identity" : "highlightswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/appstefan/HighlightSwift",
+      "state" : {
+        "revision" : "784ca3ccfc8a2cf724fbb2f06cb6ec3329424da3",
+        "version" : "1.1.0"
+      }
+    }
+  ],
+  "version" : 3
+}

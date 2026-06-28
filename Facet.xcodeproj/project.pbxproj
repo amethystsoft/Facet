@@ -6,14 +6,85 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A6310EE92FF1CA3E0023AA19 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6310EE82FF1CA3E0023AA19 /* Cocoa.framework */; };
+		A6310EF42FF1CA3E0023AA19 /* Facet-Xcode.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A6310EE62FF1CA3E0023AA19 /* Facet-Xcode.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A6310EFE2FF1CE100023AA19 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6310EEA2FF1CA3E0023AA19 /* XcodeKit.framework */; };
+		A6310EFF2FF1CE100023AA19 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6310EEA2FF1CA3E0023AA19 /* XcodeKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A6310F1B2FF1DE730023AA19 /* HighlightSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A6310F1A2FF1DE730023AA19 /* HighlightSwift */; };
+		A6310F1E2FF1E7200023AA19 /* DebouncedOnChange in Frameworks */ = {isa = PBXBuildFile; productRef = A6310F1D2FF1E7200023AA19 /* DebouncedOnChange */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6310EF22FF1CA3E0023AA19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6310ECC2FF1CA290023AA19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6310EE52FF1CA3E0023AA19;
+			remoteInfo = "Facet-Xcode";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A6310EF92FF1CA3E0023AA19 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				A6310EF42FF1CA3E0023AA19 /* Facet-Xcode.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+		A6310F002FF1CE100023AA19 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = Frameworks;
+			files = (
+				A6310EFF2FF1CE100023AA19 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		A6310ED42FF1CA290023AA19 /* Facet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Facet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6310EE62FF1CA3E0023AA19 /* Facet-Xcode.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Facet-Xcode.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6310EE82FF1CA3E0023AA19 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A6310EEA2FF1CA3E0023AA19 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A6310EF52FF1CA3E0023AA19 /* Exceptions for "Facet-Xcode" folder in "Facet-Xcode" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A6310EE52FF1CA3E0023AA19 /* Facet-Xcode */;
+		};
+		A6310EFD2FF1CB7E0023AA19 /* Exceptions for "Facet" folder in "Facet" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A6310ED32FF1CA290023AA19 /* Facet */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A6310ED62FF1CA290023AA19 /* Facet */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A6310EFD2FF1CB7E0023AA19 /* Exceptions for "Facet" folder in "Facet" target */,
+			);
 			path = Facet;
+			sourceTree = "<group>";
+		};
+		A6310EEC2FF1CA3E0023AA19 /* Facet-Xcode */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A6310EF52FF1CA3E0023AA19 /* Exceptions for "Facet-Xcode" folder in "Facet-Xcode" target */,
+			);
+			path = "Facet-Xcode";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -22,6 +93,15 @@
 		A6310ED12FF1CA290023AA19 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				A6310F1B2FF1DE730023AA19 /* HighlightSwift in Frameworks */,
+				A6310F1E2FF1E7200023AA19 /* DebouncedOnChange in Frameworks */,
+			);
+		};
+		A6310EE32FF1CA3E0023AA19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				A6310EE92FF1CA3E0023AA19 /* Cocoa.framework in Frameworks */,
+				A6310EFE2FF1CE100023AA19 /* XcodeKit.framework in Frameworks */,
 			);
 		};
 /* End PBXFrameworksBuildPhase section */
@@ -31,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				A6310ED62FF1CA290023AA19 /* Facet */,
+				A6310EEC2FF1CA3E0023AA19 /* Facet-Xcode */,
+				A6310EE72FF1CA3E0023AA19 /* Frameworks */,
 				A6310ED52FF1CA290023AA19 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,8 +121,18 @@
 			isa = PBXGroup;
 			children = (
 				A6310ED42FF1CA290023AA19 /* Facet.app */,
+				A6310EE62FF1CA3E0023AA19 /* Facet-Xcode.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A6310EE72FF1CA3E0023AA19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6310EE82FF1CA3E0023AA19 /* Cocoa.framework */,
+				A6310EEA2FF1CA3E0023AA19 /* XcodeKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -53,16 +145,43 @@
 				A6310ED02FF1CA290023AA19 /* Sources */,
 				A6310ED12FF1CA290023AA19 /* Frameworks */,
 				A6310ED22FF1CA290023AA19 /* Resources */,
+				A6310EF92FF1CA3E0023AA19 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
+			);
+			dependencies = (
+				A6310EF32FF1CA3E0023AA19 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				A6310ED62FF1CA290023AA19 /* Facet */,
 			);
 			name = Facet;
+			packageProductDependencies = (
+				A6310F1A2FF1DE730023AA19 /* HighlightSwift */,
+				A6310F1D2FF1E7200023AA19 /* DebouncedOnChange */,
+			);
 			productName = Facet;
 			productReference = A6310ED42FF1CA290023AA19 /* Facet.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A6310EE52FF1CA3E0023AA19 /* Facet-Xcode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6310EF62FF1CA3E0023AA19 /* Build configuration list for PBXNativeTarget "Facet-Xcode" */;
+			buildPhases = (
+				A6310EE22FF1CA3E0023AA19 /* Sources */,
+				A6310EE32FF1CA3E0023AA19 /* Frameworks */,
+				A6310EE42FF1CA3E0023AA19 /* Resources */,
+				A6310F002FF1CE100023AA19 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				A6310EEC2FF1CA3E0023AA19 /* Facet-Xcode */,
+			);
+			name = "Facet-Xcode";
+			productName = "Facet-Xcode";
+			productReference = A6310EE62FF1CA3E0023AA19 /* Facet-Xcode.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -77,6 +196,9 @@
 					A6310ED32FF1CA290023AA19 = {
 						CreatedOnToolsVersion = 27.0;
 					};
+					A6310EE52FF1CA3E0023AA19 = {
+						CreatedOnToolsVersion = 27.0;
+					};
 				};
 			};
 			buildConfigurationList = A6310ECF2FF1CA290023AA19 /* Build configuration list for PBXProject "Facet" */;
@@ -88,18 +210,28 @@
 			);
 			mainGroup = A6310ECB2FF1CA290023AA19;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A6310F192FF1DE730023AA19 /* XCRemoteSwiftPackageReference "HighlightSwift" */,
+				A6310F1C2FF1E7200023AA19 /* XCRemoteSwiftPackageReference "DebouncedOnChange" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A6310ED52FF1CA290023AA19 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				A6310ED32FF1CA290023AA19 /* Facet */,
+				A6310EE52FF1CA3E0023AA19 /* Facet-Xcode */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A6310ED22FF1CA290023AA19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		A6310EE42FF1CA3E0023AA19 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
 			);
@@ -112,7 +244,20 @@
 			files = (
 			);
 		};
+		A6310EE22FF1CA3E0023AA19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6310EF32FF1CA3E0023AA19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6310EE52FF1CA3E0023AA19 /* Facet-Xcode */;
+			targetProxy = A6310EF22FF1CA3E0023AA19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A6310EDD2FF1CA2A0023AA19 /* Debug configuration for PBXProject "Facet" */ = {
@@ -240,6 +385,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Facet/Facet.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -249,6 +395,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Facet/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -272,6 +419,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Facet/Facet.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -281,6 +429,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Facet/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,6 +442,70 @@
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A6310EF72FF1CA3E0023AA19 /* Debug configuration for PBXNativeTarget "Facet-Xcode" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Facet-Xcode/Facet-Xcode.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 68YWPYV749;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Facet-Xcode/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Facet-Xcode";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.touchthegrass.Facet.Facet-Xcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A6310EF82FF1CA3E0023AA19 /* Release configuration for PBXNativeTarget "Facet-Xcode" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Facet-Xcode/Facet-Xcode.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 68YWPYV749;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Facet-Xcode/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Facet-Xcode";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.touchthegrass.Facet.Facet-Xcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -318,7 +531,47 @@
 			);
 			defaultConfigurationName = Release;
 		};
+		A6310EF62FF1CA3E0023AA19 /* Build configuration list for PBXNativeTarget "Facet-Xcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6310EF72FF1CA3E0023AA19 /* Debug configuration for PBXNativeTarget "Facet-Xcode" */,
+				A6310EF82FF1CA3E0023AA19 /* Release configuration for PBXNativeTarget "Facet-Xcode" */,
+			);
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A6310F192FF1DE730023AA19 /* XCRemoteSwiftPackageReference "HighlightSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/appstefan/HighlightSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.9;
+			};
+		};
+		A6310F1C2FF1E7200023AA19 /* XCRemoteSwiftPackageReference "DebouncedOnChange" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Tunous/DebouncedOnChange.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A6310F1A2FF1DE730023AA19 /* HighlightSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6310F192FF1DE730023AA19 /* XCRemoteSwiftPackageReference "HighlightSwift" */;
+			productName = HighlightSwift;
+		};
+		A6310F1D2FF1E7200023AA19 /* DebouncedOnChange */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6310F1C2FF1E7200023AA19 /* XCRemoteSwiftPackageReference "DebouncedOnChange" */;
+			productName = DebouncedOnChange;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A6310ECC2FF1CA290023AA19 /* Project object */;
 	validationLevel = 1;
