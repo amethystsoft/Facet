@@ -9,14 +9,6 @@
 			<key>XCSourceEditorCommandDefinitions</key>
 			<array>
 				<dict>
-					<key>XCSourceEditorCommandName</key>
-					<string>Apply Replace</string>
-					<key>XCSourceEditorCommandIdentifier</key>
-					<string>$(PRODUCT_BUNDLE_IDENTIFIER).RegexApply</string>
-					<key>XCSourceEditorCommandClassName</key>
-					<string>$(PRODUCT_MODULE_NAME).RegexApply</string>
-				</dict>
-				<dict>
 					<key>XCSourceEditorCommandClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).RegexReplace</string>
 					<key>XCSourceEditorCommandIdentifier</key>

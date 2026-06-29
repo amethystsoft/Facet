@@ -60,7 +60,7 @@
       <RemoteRunnable
          runnableDebuggingMode = "0"
          BundleIdentifier = "com.apple.dt.Xcode"
-         RemotePath = "/Applications/Xcode-beta.app">
+         RemotePath = "/Applications/Xcode.app">
       </RemoteRunnable>
       <MacroExpansion>
          <BuildableReference
